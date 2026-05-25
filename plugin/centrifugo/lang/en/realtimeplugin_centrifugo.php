@@ -29,6 +29,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $string['apikey'] = 'HTTP API key';
 $string['apikey_desc'] = 'API key for authenticating server-to-Centrifugo requests (publishing events). Corresponds to `api_key` in Centrifugo server configuration. Railway template variable: `CENTRIFUGO_HTTP_API_KEY`.';
+$string['channelnotauthorised'] = 'You are not allowed to subscribe to this channel.';
 $string['configintro'] = 'This plugin enables real-time communication via WebSockets using <a href="https://centrifugal.dev/" target="_blank">Centrifugo</a>, an open-source scalable real-time messaging server.
 
 The easiest way to set up your own Centrifugo hosting is to use the <a href="{$a->railwayurl}" target="_blank">Railway template</a>. All secrets will be randomly generated. After deploying, copy the deployed URL and other variables into the settings below.<br><br>
@@ -43,6 +44,7 @@ $string['importbutton'] = 'Import settings';
 $string['importerror'] = 'Could not parse the configuration.';
 $string['importtitle'] = 'Import settings';
 $string['pluginname'] = 'Centrifugo';
+$string['pluginnotenabled'] = 'The Centrifugo plugin is not enabled.';
 $string['privacy:metadata:centrifugo'] = 'The Centrifugo plugin does not store any personal data in Moodle. It sends data to the external Centrifugo server, which delivers real-time events to the users\' browsers. Depending on its configuration, the Centrifugo server may keep recent events for some time.';
 $string['privacy:metadata:centrifugo:payload'] = 'The data of the real-time events. It is sent to all users subscribed to the channel. The content depends on the plugin that sends the event and may include personal data.';
 $string['privacy:metadata:centrifugo:userid'] = 'The ID of the user. It is included in the token that the user\'s browser uses to connect to the Centrifugo server.';
